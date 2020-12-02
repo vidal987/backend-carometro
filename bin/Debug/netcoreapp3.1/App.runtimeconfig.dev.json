@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\vidal\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\vidal\\.nuget\\packages"
+    ]
+  }
+}
