@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using App.Data;
 using App.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace App.Controllers
 {

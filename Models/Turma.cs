@@ -1,9 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text.Json.Serialization;
-using System.Threading.Tasks;
 
 namespace App.Models
 {
@@ -15,6 +11,7 @@ namespace App.Models
         public Curso Curso { get; set; }
         public int IdCurso { get; set; }
         public ICollection<Aluno> Alunos { get; set; }
+        public bool Formado { get; set; }
 
     }
 }

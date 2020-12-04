@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace App.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20201202175409_Initial")]
+    [Migration("20201204171142_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,12 +43,9 @@ namespace App.Migrations
                     b.Property<string>("Telefone")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
-                    b.Property<int?>("TurmaId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("TurmaId");
+                    b.HasIndex("IdTurma");
 
                     b.ToTable("Alunos");
                 });
@@ -79,6 +76,9 @@ namespace App.Migrations
                     b.Property<string>("Conteudo")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<string>("CriadoPor")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<DateTime>("DataCriacao")
                         .HasColumnType("datetime(6)");
 
@@ -101,6 +101,9 @@ namespace App.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
+                    b.Property<bool>("Formado")
+                        .HasColumnType("tinyint(1)");
+
                     b.Property<int>("IdCurso")
                         .HasColumnType("int");
 
@@ -118,7 +121,9 @@ namespace App.Migrations
                 {
                     b.HasOne("App.Models.Turma", "Turma")
                         .WithMany("Alunos")
-                        .HasForeignKey("TurmaId");
+                        .HasForeignKey("IdTurma")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("App.Models.Ocorrencia", b =>

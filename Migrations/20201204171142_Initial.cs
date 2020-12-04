@@ -29,7 +29,8 @@ namespace App.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Nome = table.Column<string>(nullable: true),
-                    IdCurso = table.Column<int>(nullable: false)
+                    IdCurso = table.Column<int>(nullable: false),
+                    Formado = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -53,18 +54,17 @@ namespace App.Migrations
                     Telefone = table.Column<string>(nullable: true),
                     Endereco = table.Column<string>(nullable: true),
                     DataNasc = table.Column<DateTime>(nullable: false),
-                    IdTurma = table.Column<int>(nullable: false),
-                    TurmaId = table.Column<int>(nullable: true)
+                    IdTurma = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Alunos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Alunos_Turmas_TurmaId",
-                        column: x => x.TurmaId,
+                        name: "FK_Alunos_Turmas_IdTurma",
+                        column: x => x.IdTurma,
                         principalTable: "Turmas",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -76,6 +76,7 @@ namespace App.Migrations
                     DataCriacao = table.Column<DateTime>(nullable: false),
                     Titulo = table.Column<string>(nullable: true),
                     Conteudo = table.Column<string>(nullable: true),
+                    CriadoPor = table.Column<string>(nullable: true),
                     IdAluno = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -90,9 +91,9 @@ namespace App.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Alunos_TurmaId",
+                name: "IX_Alunos_IdTurma",
                 table: "Alunos",
-                column: "TurmaId");
+                column: "IdTurma");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Ocorrencias_IdAluno",

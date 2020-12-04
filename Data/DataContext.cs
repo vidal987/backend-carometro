@@ -1,13 +1,9 @@
 ﻿using App.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace App.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : DbContext 
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
@@ -18,9 +14,6 @@ namespace App.Data
         public DbSet<Ocorrencia> Ocorrencias { get; set; }
         public DbSet<Curso> Cursos { get; set; }
         public DbSet<Turma> Turmas { get; set; }
-
-
-
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

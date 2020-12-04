@@ -37,7 +37,7 @@ namespace App.Controllers
                         
                          where a.Id == id
                          select a).Include(q => q.Ocorrencias).FirstOrDefault<Aluno>();
-            s   
+            
 
             if (aluno == null)
             {
