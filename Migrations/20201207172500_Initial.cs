@@ -54,6 +54,7 @@ namespace App.Migrations
                     Telefone = table.Column<string>(nullable: true),
                     Endereco = table.Column<string>(nullable: true),
                     DataNasc = table.Column<DateTime>(nullable: false),
+                    Foto = table.Column<byte[]>(nullable: true),
                     IdTurma = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

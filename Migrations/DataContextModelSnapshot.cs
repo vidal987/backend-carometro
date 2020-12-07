@@ -32,6 +32,9 @@ namespace App.Migrations
                     b.Property<string>("Endereco")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
+                    b.Property<byte[]>("Foto")
+                        .HasColumnType("longblob");
+
                     b.Property<int>("IdTurma")
                         .HasColumnType("int");
 

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace App.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20201204171142_Initial")]
+    [Migration("20201207172500_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,6 +33,9 @@ namespace App.Migrations
 
                     b.Property<string>("Endereco")
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<byte[]>("Foto")
+                        .HasColumnType("longblob");
 
                     b.Property<int>("IdTurma")
                         .HasColumnType("int");

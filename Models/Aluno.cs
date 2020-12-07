@@ -16,7 +16,7 @@ namespace App.Models
         public string Telefone { get; set; }
         public string Endereco { get; set; }
         public DateTime DataNasc { get; set; }
-
+        public byte[] Foto { get; set; }
         public int IdTurma { get; set; }
         [JsonIgnore]
         public Turma Turma { get; set; }
