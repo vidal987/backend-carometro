@@ -10,7 +10,7 @@ using App.Models;
 using Microsoft.AspNetCore.Authorization;
 
 namespace App.Controllers
-{   [Authorize]
+{   [Authorize ]
     [Route("api/[controller]")]
     [ApiController]
     public class TurmasController : ControllerBase

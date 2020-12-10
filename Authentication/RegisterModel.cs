@@ -6,7 +6,7 @@ namespace App.Authentication
     public class RegisterModel
     {
         [Required(ErrorMessage = "User Name is required")]
-        public string Username { get; set; }
+        public string Ni { get; set; }
 
         [EmailAddress]
         [Required(ErrorMessage = "Email is required")]

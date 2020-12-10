@@ -186,3 +186,10 @@ C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\runtimes\win\lib\ne
 C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\Azure.Identity.dll
+C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\Azure.Storage.Blobs.dll
+C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\Azure.Storage.Common.dll
+C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\Azure.Storage.Files.Shares.dll
+C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\Azure.Storage.Queues.dll
+C:\Users\vidal\Documents\Dev\App\App\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Azure.dll

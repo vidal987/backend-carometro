@@ -33,6 +33,7 @@ namespace App.Migrations
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
 
                     b.Property<byte[]>("Foto")
+                        .IsRequired()
                         .HasColumnType("longblob");
 
                     b.Property<int>("IdTurma")
