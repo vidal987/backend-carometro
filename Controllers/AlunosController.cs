@@ -49,9 +49,6 @@ namespace App.Controllers
             return aluno;
         }
 
-        // PUT: api/Alunos/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
         [HttpPut("{id}")]
         public async Task<IActionResult> PutAluno(int id, Aluno aluno)
         {
@@ -81,11 +78,9 @@ namespace App.Controllers
             return NoContent();
         }
 
-        // POST: api/Alunos
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for
-        // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
+    
         [HttpPost]
-        public async Task<ActionResult<Aluno>> PostAluno(Aluno aluno)
+        public async Task<ActionResult<Aluno>> PostAluno( Aluno aluno)
         {
             _context.Alunos.Add(aluno);
             await _context.SaveChangesAsync();
@@ -93,7 +88,8 @@ namespace App.Controllers
             return CreatedAtAction("GetAluno", new { id = aluno.Id }, aluno);
         }
 
-        // DELETE: api/Alunos/5
+
+
         [HttpDelete("{id}")]
         public async Task<ActionResult<Aluno>> DeleteAluno(int id)
         {

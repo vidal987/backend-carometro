@@ -49,10 +49,10 @@ public class Startup
             options.RequireHttpsMetadata = false;
             options.TokenValidationParameters = new TokenValidationParameters()
             {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidAudience = Configuration["JWT:ValidAudience"],
-                ValidIssuer = Configuration["JWT:ValidIssuer"],
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                //ValidAudience = Configuration["JWT:ValidAudience"],
+                //ValidIssuer = Configuration["JWT:ValidIssuer"],
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Secret"]))
             };
         });
@@ -76,8 +76,8 @@ public class Startup
 
         app.UseRouting();
 
-        app.UseAuthorization();
         app.UseAuthentication();
+        app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>
         {

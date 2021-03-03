@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\vidal\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\vidal\\.nuget\\packages"
+      "C:\\Users\\Vidal\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Vidal\\.nuget\\packages",
+      "C:\\Microsoft\\Xamarin\\NuGet"
     ]
   }
 }

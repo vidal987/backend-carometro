@@ -10527,20 +10527,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vidal\\.nuget\\packages\\": {}
+    "C:\\Users\\Vidal\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vidal\\Documents\\Dev\\App\\App\\App.csproj",
+      "projectUniqueName": "C:\\Users\\Vidal\\Documents\\Dev\\backend-carometro\\App.csproj",
       "projectName": "App",
-      "projectPath": "C:\\Users\\vidal\\Documents\\Dev\\App\\App\\App.csproj",
-      "packagesPath": "C:\\Users\\vidal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vidal\\Documents\\Dev\\App\\App\\obj\\",
+      "projectPath": "C:\\Users\\Vidal\\Documents\\Dev\\backend-carometro\\App.csproj",
+      "packagesPath": "C:\\Users\\Vidal\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vidal\\Documents\\Dev\\backend-carometro\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Vidal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -10672,7 +10677,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }
